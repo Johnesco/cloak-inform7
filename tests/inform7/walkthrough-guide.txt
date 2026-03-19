@@ -1,0 +1,21 @@
+# Auto-generated walkthrough guide
+
+## Cloakroom
+
+> west
+
+# +1 points
+# (first taking it off) You put the velvet cloak on the small brass hook.
+> hang cloak on hook
+
+## Foyer of the Opera House
+
+> east
+
+## Foyer Bar
+
+> south
+
+# The message, neatly marked in the sawdust, reads... In that game you scored
+#   2 out of a possible 2, in 5 turns.
+> read message

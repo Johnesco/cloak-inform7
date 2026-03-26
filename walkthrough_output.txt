@@ -8,7 +8,7 @@ Hurrying through the rainswept November night, you're glad to see the bright lig
 
 Cloak of Darkness
 A basic IF demonstration by Roger Firth and Graham Nelson
-Release 1 / Serial number 260319 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260322 / Inform 7 v10.1.2 / D
 
 Foyer of the Opera House
 You are standing in a spacious hall, splendidly decorated in red and gold, with glittering chandeliers overhead. The entrance from the street is to the north, and there are doorways south and west.

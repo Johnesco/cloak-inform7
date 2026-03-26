@@ -20,7 +20,3 @@ A handsome cloak, of velvet trimmed with satin, and slightly splattered with rai
 
 > score
 You have so far scored 0 out of a possible 2, in 2 turns.
-
-
-> quit
-Are you sure you want to quit? 

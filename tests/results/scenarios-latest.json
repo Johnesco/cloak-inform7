@@ -1,6 +1,6 @@
 {
   "game": "cloak-inform7",
-  "regtest_file": "cloak-inform7/tests/cloak-inform7.regtest",
+  "regtest_file": "C:/code/text-games/i7/cloak-inform7/tests/cloak-inform7.regtest",
   "seed": "",
   "duration_seconds": 0.1,
   "total": 5,
@@ -12,16 +12,36 @@
     "full-run"
   ],
   "primary": "full-run",
+  "assertions": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0
+  },
   "scenarios": [
     {
       "name": "startup",
-      "commands": 1,
-      "transcript_lines": 27,
-      "exit_code": 0,
-      "output_file": "cloak-inform7\\tests\\scenarios\\startup.transcript.txt",
-      "commands_file": "cloak-inform7\\tests\\scenarios\\startup.commands.txt",
-      "seed": "",
       "status": "pass",
+      "seed": "",
+      "commands": 1,
+      "transcript_lines": 23,
+      "exit_code": 0,
+      "transcript_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\startup.transcript.txt",
+      "commands_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\startup.commands.txt",
+      "assertions": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "failures": [],
+        "details": [
+          {
+            "check": "/Foyer of the Opera House",
+            "command": "look",
+            "cmd_idx": 1,
+            "passed": true,
+            "response": "Foyer of the Opera House\nYou are standing in a spacious hall, splendidly decorated in red and gold, with glittering chandeliers overhead. The entrance from the street is to the north, and there are doorways south and west."
+          }
+        ]
+      },
       "score": "0/2",
       "win": false,
       "won_text": false,
@@ -38,13 +58,49 @@
     },
     {
       "name": "full-run",
-      "commands": 5,
-      "transcript_lines": 61,
-      "exit_code": 0,
-      "output_file": "cloak-inform7\\tests\\scenarios\\full-run.transcript.txt",
-      "commands_file": "cloak-inform7\\tests\\scenarios\\full-run.commands.txt",
-      "seed": "",
       "status": "pass",
+      "seed": "",
+      "commands": 5,
+      "transcript_lines": 58,
+      "exit_code": 0,
+      "transcript_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\full-run.transcript.txt",
+      "commands_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\full-run.commands.txt",
+      "assertions": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "failures": [],
+        "details": [
+          {
+            "check": "/Cloakroom",
+            "command": "west",
+            "cmd_idx": 1,
+            "passed": true,
+            "response": "Cloakroom\nThe walls of this small room were clearly once lined with hooks, though now only one remains. The exit is a door to the east."
+          },
+          {
+            "check": "/hook",
+            "command": "hang cloak on hook",
+            "cmd_idx": 2,
+            "passed": true,
+            "response": "(first taking it off)\nYou put the velvet cloak on the small brass hook.\n\n[Your score has just gone up by one point.]"
+          },
+          {
+            "check": "/Bar",
+            "command": "south",
+            "cmd_idx": 4,
+            "passed": true,
+            "response": "Foyer Bar\nThe bar, much rougher than you'd have guessed after the opulence of the foyer to the north, is completely empty. There seems to be some sort of message scrawled in the sawdust on the floor."
+          },
+          {
+            "check": "/The End",
+            "command": "read message",
+            "cmd_idx": 5,
+            "passed": true,
+            "response": "The message, neatly marked in the sawdust, reads...\n\n\n\n    *** The End ***\n\n\nIn that game you scored 2 out of a possible 2, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?"
+          }
+        ]
+      },
       "score": "2/2",
       "win": true,
       "won_text": false,
@@ -61,13 +117,35 @@
     },
     {
       "name": "lose-path",
-      "commands": 2,
-      "transcript_lines": 32,
-      "exit_code": 0,
-      "output_file": "cloak-inform7\\tests\\scenarios\\lose-path.transcript.txt",
-      "commands_file": "cloak-inform7\\tests\\scenarios\\lose-path.commands.txt",
-      "seed": "",
       "status": "pass",
+      "seed": "",
+      "commands": 2,
+      "transcript_lines": 28,
+      "exit_code": 0,
+      "transcript_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\lose-path.transcript.txt",
+      "commands_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\lose-path.commands.txt",
+      "assertions": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0,
+        "failures": [],
+        "details": [
+          {
+            "check": "/dark",
+            "command": "south",
+            "cmd_idx": 1,
+            "passed": true,
+            "response": "Darkness\nIt is pitch dark, and you can't see a thing."
+          },
+          {
+            "check": "!You have won",
+            "command": "read message",
+            "cmd_idx": 2,
+            "passed": true,
+            "response": "You can't see any such thing."
+          }
+        ]
+      },
       "score": "0/2",
       "win": false,
       "won_text": false,
@@ -84,13 +162,28 @@
     },
     {
       "name": "inventory-check",
-      "commands": 1,
-      "transcript_lines": 27,
-      "exit_code": 0,
-      "output_file": "cloak-inform7\\tests\\scenarios\\inventory-check.transcript.txt",
-      "commands_file": "cloak-inform7\\tests\\scenarios\\inventory-check.commands.txt",
-      "seed": "",
       "status": "pass",
+      "seed": "",
+      "commands": 1,
+      "transcript_lines": 23,
+      "exit_code": 0,
+      "transcript_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\inventory-check.transcript.txt",
+      "commands_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\inventory-check.commands.txt",
+      "assertions": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "failures": [],
+        "details": [
+          {
+            "check": "/velvet cloak",
+            "command": "inventory",
+            "cmd_idx": 1,
+            "passed": true,
+            "response": "You are carrying:\n  a velvet cloak (being worn)"
+          }
+        ]
+      },
       "score": "0/2",
       "win": false,
       "won_text": false,
@@ -107,13 +200,28 @@
     },
     {
       "name": "examine-cloak",
-      "commands": 1,
-      "transcript_lines": 26,
-      "exit_code": 0,
-      "output_file": "cloak-inform7\\tests\\scenarios\\examine-cloak.transcript.txt",
-      "commands_file": "cloak-inform7\\tests\\scenarios\\examine-cloak.commands.txt",
-      "seed": "",
       "status": "pass",
+      "seed": "",
+      "commands": 1,
+      "transcript_lines": 22,
+      "exit_code": 0,
+      "transcript_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\examine-cloak.transcript.txt",
+      "commands_file": "C:\\code\\text-games\\i7\\cloak-inform7\\tests\\scenarios\\examine-cloak.commands.txt",
+      "assertions": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "failures": [],
+        "details": [
+          {
+            "check": "/handsome cloak",
+            "command": "examine cloak",
+            "cmd_idx": 1,
+            "passed": true,
+            "response": "A handsome cloak, of velvet trimmed with satin, and slightly splattered with raindrops. Its blackness is so deep that it almost seems to suck light from the room."
+          }
+        ]
+      },
       "score": "0/2",
       "win": false,
       "won_text": false,

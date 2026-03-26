@@ -1,0 +1,32 @@
+# Cloak of Darkness — RegTest scenarios
+# Standard IF benchmark: 3 rooms, 1 puzzle
+
+
+== startup: Foyer Smoke Test  [smoke tests]
+> look
+?? /Foyer of the Opera House
+
+== full-run: Win Path (Hang Cloak, Read Message)  [win paths, primary]
+> west
+?? /Cloakroom
+> hang cloak on hook
+? /hook
+> east
+> south
+?? /Bar
+> read message
+?? /The End
+
+== lose-path: Lose Path (Scuff the Floor)  [alternate paths]
+> south
+? /dark
+> read message
+?! You have won
+
+== inventory-check: Starting Inventory  [smoke tests]
+> inventory
+? /velvet cloak
+
+== examine-cloak: Examine Cloak  [smoke tests]
+> examine cloak
+? /handsome cloak

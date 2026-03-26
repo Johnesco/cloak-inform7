@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "game": "cloak-inform7",
+  "layers": {
+    "scenarios": { "enabled": true, "regtest_file": "cloak-inform7.regtest" }
+  },
+  "coverage": { "rooms_total": 3, "items_total": 2, "puzzles_total": 1, "deaths_known": 0, "score_max": 2 }
+}

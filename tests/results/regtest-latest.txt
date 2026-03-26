@@ -1,0 +1,5 @@
+* startup
+* full-run
+* lose-path
+* inventory-check
+* examine-cloak

@@ -1,0 +1,5 @@
+west
+hang cloak on hook
+east
+south
+read message

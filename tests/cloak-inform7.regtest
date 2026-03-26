@@ -1,0 +1,37 @@
+# Cloak of Darkness — RegTest scenarios
+# Standard IF benchmark: 3 rooms, 1 puzzle
+
+** game: ../cloak-inform7.ulx
+
+* startup
+> look
+{vital}
+/Foyer of the Opera House
+
+* full-run
+> west
+{vital}
+/Cloakroom
+> hang cloak on hook
+/hook
+> east
+> south
+{vital}
+/Bar
+> read message
+{vital}
+/The End
+
+* lose-path
+> south
+/dark
+> read message
+!You have won
+
+* inventory-check
+> inventory
+/velvet cloak
+
+* examine-cloak
+> examine cloak
+/handsome cloak

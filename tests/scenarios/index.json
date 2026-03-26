@@ -1,0 +1,9 @@
+{
+  "scenarios": [
+    { "name": "startup", "title": "Foyer Smoke Test", "category": "Smoke Tests" },
+    { "name": "full-run", "title": "Win Path (Hang Cloak, Read Message)", "category": "Win Paths", "primary": true },
+    { "name": "lose-path", "title": "Lose Path (Scuff the Floor)", "category": "Alternate Paths" },
+    { "name": "inventory-check", "title": "Starting Inventory", "category": "Smoke Tests" },
+    { "name": "examine-cloak", "title": "Examine Cloak", "category": "Smoke Tests" }
+  ]
+}

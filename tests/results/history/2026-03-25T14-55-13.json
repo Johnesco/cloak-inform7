@@ -1,0 +1,14 @@
+{
+  "game": "cloak-inform7",
+  "timestamp": "2026-03-25T19:55:13+00:00",
+  "binary_hash": "42409656",
+  "duration_seconds": 0.2,
+  "layers": {
+    "regtest": {
+      "status": "pass",
+      "detail": "all assertions passed",
+      "failures": []
+    }
+  },
+  "overall": "pass"
+}

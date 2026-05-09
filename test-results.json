@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "storyId": "cloak-inform7",
+  "timestamp": "2026-05-09T00:38:12.861890+00:00",
+  "transcripts": [
+    {
+      "file": "cloak-inform7.scenario",
+      "title": "Foyer Smoke Test",
+      "commands": [
+        {
+          "lineNumber": 1,
+          "input": "look",
+          "output": "Foyer of the Opera House\nYou are standing in a spacious hall, splendidly decorated in red and gold, with glittering chandeliers overhead. The entrance from the street is to the north, and there are doorways south and west.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "Foyer of the Opera House"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "file": "cloak-inform7.scenario",
+      "title": "Win Path (Hang Cloak, Read Message)",
+      "commands": [
+        {
+          "lineNumber": 1,
+          "input": "west",
+          "output": "Cloakroom\nThe walls of this small room were clearly once lined with hooks, though now only one remains. The exit is a door to the east.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "Cloakroom"
+            }
+          ]
+        },
+        {
+          "lineNumber": 2,
+          "input": "hang cloak on hook",
+          "output": "(first taking it off)\nYou put the velvet cloak on the small brass hook.\n\n[Your score has just gone up by one point.]",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "hook"
+            }
+          ]
+        },
+        {
+          "lineNumber": 4,
+          "input": "south",
+          "output": "Foyer Bar\nThe bar, much rougher than you'd have guessed after the opulence of the foyer to the north, is completely empty. There seems to be some sort of message scrawled in the sawdust on the floor.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "Bar"
+            }
+          ]
+        },
+        {
+          "lineNumber": 5,
+          "input": "read message",
+          "output": "The message, neatly marked in the sawdust, reads...\n\n\n\n    *** The End ***\n\n\nIn that game you scored 2 out of a possible 2, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "The End"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "file": "cloak-inform7.scenario",
+      "title": "Lose Path (Scuff the Floor)",
+      "commands": [
+        {
+          "lineNumber": 1,
+          "input": "south",
+          "output": "Darkness\nIt is pitch dark, and you can't see a thing.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "dark"
+            }
+          ]
+        },
+        {
+          "lineNumber": 2,
+          "input": "read message",
+          "output": "You can't see any such thing.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-not-contains",
+              "passed": true,
+              "value": "You have won"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "file": "cloak-inform7.scenario",
+      "title": "Starting Inventory",
+      "commands": [
+        {
+          "lineNumber": 1,
+          "input": "inventory",
+          "output": "You are carrying:\n  a velvet cloak (being worn)",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "velvet cloak"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "file": "cloak-inform7.scenario",
+      "title": "Examine Cloak",
+      "commands": [
+        {
+          "lineNumber": 1,
+          "input": "examine cloak",
+          "output": "A handsome cloak, of velvet trimmed with satin, and slightly splattered with raindrops. Its blackness is so deep that it almost seems to suck light from the room.",
+          "passed": true,
+          "skipped": false,
+          "assertions": [
+            {
+              "type": "ok-matches",
+              "passed": true,
+              "value": "handsome cloak"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "summary": {
+    "totalPassed": 9,
+    "totalFailed": 0,
+    "totalSkipped": 0
+  }
+}
